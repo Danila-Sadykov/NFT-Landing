@@ -1,0 +1,89 @@
+.popular{
+  margin-top: 170px;
+
+  .auctions__img{
+    max-height: 270px;
+  }
+
+  .auctions-profile__nick{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 36px;
+
+    @media(max-width: 970px){
+      font-size: 25px;
+      line-height: 0;
+    }
+  }
+
+  .auctions-profile__likes{
+    span{
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 35px;
+
+      @media(max-width: 970px){
+        font-size: 18px;
+        line-height: 0;
+      }
+
+      // @media(max-width: 600px){
+      //   font-size: 18px;
+      //   line-height: 0;
+      // }
+    }
+  }
+}
+
+.popular__item{
+  background: #3D2942;
+  padding: 32px 32px 15px;
+
+  .auctions__profile{
+    margin-bottom: 0;
+
+    @media(max-width: 600px){
+      margin-top: 42px;
+    }
+    @media(max-width: 500px){
+      margin-top: 10px;
+    }
+  }
+
+  @media(max-width: 600px){
+    padding: 20px 32px 32px;
+  }
+
+  @media(max-width: 400px){
+    padding: 15px 20px 20px;
+  }
+}
+
+.popular__main{
+  position: relative;
+}
+
+.swiper-botton-next2,
+.swiper-botton-prev2{
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.swiper-botton-prev2{
+  left: 0;
+}
+
+.swiper-botton-next2{
+  right: 0;
+}
+
+.swiper-button-prev2.swiper-button-disabled,
+.swiper-button-next2.swiper-button-disabled {
+  display: none;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.popular-slider{
+  padding: 0 !important;
+}

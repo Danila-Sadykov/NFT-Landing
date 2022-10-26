@@ -1,0 +1,96 @@
+body {
+  background: $black;
+  overflow-x: hidden;
+  position: relative;
+  color: $white2;
+  @include font('Work Sana', 400);
+
+  &.active-body {
+    overflow: hidden;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 36px;
+}
+
+a,
+button {
+  color: $white2;
+}
+
+.container {
+  max-width: 1390px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.title{
+  position: relative;
+  font-family: 'Oxanium';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 130px;
+  color: $white2;
+
+  @media(max-width: 600px){
+    font-size: 26px;
+    line-height: 95px;
+  }
+
+  &::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) translateX(-40%);
+    background: $purple;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+
+    @media(max-width: 600px){
+      width: 95px;
+      height: 95px;
+    }
+  }
+
+  span{
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  &--purple{
+    margin-bottom: 0;
+    &::after{
+      background: $purple;
+    }
+  }
+
+  &--red{
+    &::after{
+      background: $red;
+    }
+  }
+
+  &--mb{
+    margin-bottom: 100px;
+  }
+}
+
+.title-wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.swiper{
+  padding-top: 100px !important;
+}
